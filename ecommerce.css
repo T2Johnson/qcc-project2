@@ -1,0 +1,248 @@
+.header {
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    padding: 20px; 
+    background-color: #d1cdbc;
+    color: #7a7053; 
+    border-radius: 10px; 
+}
+
+.animated-header {
+    animation: fadeInUp 2s ease-in-out; 
+}
+
+.animated-tagline {
+    animation: fadeIn 3s ease-in; 
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start invisible */
+        transform: scale(0.5); /* Start smaller */
+    }
+    to {
+        opacity: 1; /* Fully visible */
+        transform: scale(1); /* Normal size */
+    }
+}
+
+.logo {
+    height: 90px; 
+    width: auto; 
+    margin-right: 20px; 
+}
+
+.text-content {
+    flex-grow: 1;
+    text-align: left; 
+}
+
+.header h1 {
+    font-size: 36px; 
+    font-weight: bold;
+    font-family: 'Edu AU VIC WA NT Pre', sans-serif;
+    margin: 5px 0;
+}
+
+.header .tagline {
+    font-size: 20px; 
+    font-weight: normal;
+    color: #000000; 
+    margin: 0; 
+}
+
+.middle-text {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    background-color: #a15340; 
+    color: #000000; 
+    padding: 20px;
+    max-width: 1119px; /* Sets a maximum width for larger screens */
+    margin: 0 auto; 
+}
+
+.middle-text .highlight {
+    font-size: 18px; 
+    color: #000000; 
+}
+
+.middle-text h2 {
+    font-size: 24px;
+    margin: 0; 
+}
+
+.middle-text .code {
+    font-size: 18px; 
+    font-style: italic;
+    color: #000000; 
+}
+
+.sliderwrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.sliderItem {
+    position: relative; /* Enables the overlay to be positioned relative to this container */
+    width: 100%;
+}
+
+.sliderImg {
+    width: 83%; 
+    height: 570px; 
+    display: block;
+    margin: 0 auto; 
+}
+
+.sliderTextOverlay {
+    position: absolute; /* Positions the text over the image */
+    top: 45%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background-color: #f4f1e4;
+    color: #000000;
+    padding: 20px;
+    max-width: 500px; 
+}
+
+.carousel-caption {
+    color: #ffffff;
+    padding: 10px;
+}
+
+.container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.image-item img {
+    max-width: 500px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-item {
+    position: relative;
+    width: 500px;
+    height: auto;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+body {
+    background-color: #d1cdbc;
+}
+
+.container {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 20px; 
+    padding: 20px;
+}
+
+.text-box {
+    width: 300px; 
+    padding: 20px; 
+    border: 2px solid #ccc; 
+    background-color: #f9f9f9; 
+    color: #333333;
+    text-align: center; 
+    margin: 20px;
+}
+
+.content-wrapper {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+.image-item img {
+    width: 80%; 
+    height: auto; 
+}
+
+.text-box {
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    width: 500px; 
+    background-color: #f9f9f9; 
+}
+
+footer {
+    text-align: center; 
+    color: #ffffff;
+    padding: 20px;
+}
+
+footer .container {
+    display: flex; 
+    flex-direction: column; /* Stacks footer sections vertically */
+    align-items: center; 
+    justify-content: center; 
+}
+
+footer .row {
+    width: 100%; 
+    text-align: center; 
+}
+
+footer .col-md-3 {
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: #ffffff; 
+    text-decoration: none; /* Removes underline from links */
+}
+
+footer .btn-primary {
+    background-color: #000000;
+    border: none; 
+}
